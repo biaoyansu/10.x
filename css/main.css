@@ -1,86 +1,86 @@
-* {
-  box-sizing: border-box;
+body {
+  background: #454545;
+  line-height: 1.7;
 }
 
 a {
   text-decoration: none;
-  color: #555;
 }
 
-h2, h1 {
-  margin: 10px 0 0 0;
-}
-
-body {
-  background: #454545;
-  color: #555;
-  line-height: 1.7;
-  font-size: 16px;
-}
-
-#side-bar {
-  position: fixed;
+a, body {
   color: #eee;
-  width: 20%;
-  float: left;
-  padding-right: 30px;
 }
 
-#side-bar > * {
+.side-bar {
+  float: left;
+  width: 20%;
+  position: fixed;
+}
+
+.side-bar > * {
   padding: 10px 15px;
 }
-#side-bar .nav .item,
-#side-bar .cat .item {
+
+.side-bar .nav a,
+.side-bar .tag-list a {
   display: block;
-  padding: 5px 0;
+  padding: 5px;
   color: #888;
   -webkit-transition: color 200ms;
   -o-transition: color 200ms;
   transition: color 200ms;
 }
 
-#side-bar .nav .item:hover,
-#side-bar .cat .item:hover {
+.side-bar .nav a:hover,
+.side-bar .tag-list a:hover {
   color: #eee;
 }
 
-#side-bar .nav .item {
-  font-size: 16px;
+.side-bar .nav a {
   font-weight: 700;
 }
 
-#brand {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  color: #eee;
-  margin: 10px;
-  display: inline-block;
-  font-size: 30px;
-  border: 5px solid #eee;
-}
-
 .main {
-  padding: 10px 30px;
   float: right;
-  width: 50%;
-  background: #fff;
+  width: 80%;
+  color: #454545;
+}
+
+.header .logo {
+  line-height: 1;
+  border: 5px solid #eee;
+  padding: 10px 20px;
+  font-size: 30px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.article-list, .article {
   margin-right: 30%;
-  -webkit-box-shadow: -2px 2px 3px rgba(0,0,0,.2);
-  box-shadow: -2px 2px 3px rgba(0,0,0,.2);
+  background: #fff;
+  padding: 20px 30px;
+  -webkit-box-shadow: 0 0 3px 2px rgba(0,0,0,.2);
+  box-shadow: 0 0 3px 2px rgba(0,0,0,.2);
 }
 
-.article-list .item {
-  margin-bottom: 30px;
+.article-list .item  {
+  margin-bottom: 25px;
 }
 
-.article-list .item .title {
-  font-size: 20px;
-  font-weight: 900;
+.article-list .item .title,
+.article .title {
+  color: #454545;
+  font-size: 22px;
+  font-weight: 700;
 }
 
-.article .status,
-.article-list .item .status {
-  margin: 10px 0;
+.article-list .item .status,
+.article .status {
   font-size: 13px;
-  color: #aaa;
+  color: #ccc;
+}
+
+.article-list .item > *,
+.article > * {
+  margin: 10px 0;
 }
